@@ -29,3 +29,6 @@ if (( C == 256 )); then
 else
     source $Z/prompt.zsh
 fi
+
+#Lastly, shows Message of the day
+cat /etc/motd
