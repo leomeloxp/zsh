@@ -40,7 +40,7 @@ export BROWSER=chromium
 
 # Add git/scripts to PATH
 PATH="${PATH}:/srv/git/scripts"
-PATH="${PATH}:/srv/git/imgur"
+PATH="${PATH}:/srv/git/imgur-screenshot"
 # Add ruby gems to PATH
 #PATH="${PATH}:`ruby -rubygems -e 'puts Gem.user_dir'`/bin"
 
@@ -49,12 +49,12 @@ PATH="${PATH}:/srv/git/imgur"
 PATH="/usr/local/heroku/bin:$PATH"
 
 #TMUX
-if which tmux >/dev/null 2>&1; then
+#if which tmux >/dev/null 2>&1; then
     # if no session is started, start a new session
-    test -z ${TMUX} && tmux
+#    test -z ${TMUX} && tmux
 
     # when quitting tmux, try to attach
 #    while test -z ${TMUX}; do
 #        tmux attach || break
 #    done
-fi
+#fi
