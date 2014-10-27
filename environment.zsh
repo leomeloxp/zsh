@@ -3,10 +3,10 @@
 #fi
 
 ## Command not found from archwiki
-source /usr/share/doc/pkgfile/command-not-found.zsh
+#source /usr/share/doc/pkgfile/command-not-found.zsh
 
 ## olivierverdier git prompt
-source /srv/git/zsh-git-prompt/zshrc.sh
+source ~/GitHub/zsh-git-prompt/zshrc.sh
 
 # compinstall autoset options
 autoload -Uz compinit

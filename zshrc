@@ -4,7 +4,7 @@
 # Slightly inspired by P.C. Shyamshankar <sykora@lucentbeing.com>
 
 # Where everything is.
-Z=/srv/git/zsh
+Z=~/GitHub/zsh/
 # Checking for colour support
 C=$(tput colors)
 
