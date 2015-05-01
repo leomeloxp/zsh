@@ -19,18 +19,18 @@ yellowb="%{$fg_bold[yellow]%}"
 
 #Defining prompt
 if [ $(id -u) != "0" ]; then
-PROMPT="┌─[$cblue%m$cwhite$ccyan%n$cwhite]──[$cgreen%~$cwhite]──\$(git_super_status)
-└─[$cyellow%#$cwhite]─ "
+PROMPT="┌─[$cblue%m$creset$ccyan%n$creset]──[$cgreen%~$creset]──\$(git_super_status)
+└─[$cyellow%#$creset]─ "
 else 
-PROMPT="┌─[$cblue%m$cwhite$cred%n$cwhite]──[$cgreen%~$cwhite]──\$(git_super_status)
-└─[$cred%#$cwhite]─ "
+PROMPT="┌─[$cblue%m$creset$cred%n$creset]──[$cgreen%~$creset]──\$(git_super_status)
+└─[$cred%#$creset]─ "
 fi
 
 # Change RPROMPT according to character support
 if [ $TERM != "linux" ]; then
-RPROMPT="%{$(echotc UP 1)%}$cwhite──[$cmagenta$(date "+%X" | cut -c-10)$cwhite]%{$(echotc DO 1)%}"
+RPROMPT="%{$(echotc UP 1)%}$creset──[$cmagenta$(date "+%X" | cut -c-10)$creset]%{$(echotc DO 1)%}"
 else
-RPROMPT="%{$(echotc UP 1)%}$cwhite──[$cmagenta%T$cwhite]%{$(echotc DO 1)%}"
+RPROMPT="%{$(echotc UP 1)%}$creset──[$cmagenta%T$creset]%{$(echotc DO 1)%}"
 fi
 
 ## Define Terminal Title
