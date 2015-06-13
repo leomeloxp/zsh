@@ -43,7 +43,10 @@ PATH="${PATH}:/srv/git/scripts"
 PATH="${PATH}:/srv/git/imgur-screenshot"
 
 # Add ruby gems to PATH
-#PATH="${PATH}:`ruby -rubygems -e 'puts Gem.user_dir'`/bin"
+PATH="${PATH}:`ruby -rubygems -e 'puts Gem.user_dir'`/bin"
+
+# Fix Bundler's behaviour to match Arch's gem
+export GEM_HOME=$(ruby -e 'print Gem.user_dir')
 
 #RVM stuff
 #[[ -s "/usr/local/.rvm/scripts/rvm" ]] && source "/usr/local/.rvm/scripts/rvm"
