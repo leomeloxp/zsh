@@ -25,6 +25,7 @@ setopt appendhistory autocd nomatch notify
 # Set emacs keybindings
 bindkey -e
 
+if [ $TERM == "xterm" ] && [ ! -z $(readlink /proc/$PPID/exe | grep tilda) ]; then export TERM=xterm-256color; fi
 
 typeset -U fpath
 fpath=($Z/functions $fpath)

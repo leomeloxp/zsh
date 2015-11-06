@@ -32,3 +32,6 @@ fi
 
 #Lastly, shows Message of the day
 cat /etc/motd
+
+export NVM_DIR="/usr/local/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
